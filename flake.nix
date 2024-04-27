@@ -57,7 +57,7 @@
       tom =
         nixpkgs.lib.nixosSystem
         {
-          system = "aarch64-darwin";
+          system = "x86_64-linux";
           specialArgs = {
             inherit
               inputs
@@ -71,6 +71,7 @@
             home-manager.nixosModules.home-manager
             {
               home-manager = {
+                backupFileExtension = "backup";
                 useUserPackages = true;
                 useGlobalPkgs = false;
                 extraSpecialArgs = {inherit inputs spicetify-nix disko;};
