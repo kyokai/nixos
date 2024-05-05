@@ -19,7 +19,7 @@
 
       "rofi/config.rasi".text = ''
         configuration{
-            modi: "run,drun,window,windowcd";
+            modi: "run,drun,window";
             lines: 5;
             font: "Sans Serif 16";
             show-icons: true;
